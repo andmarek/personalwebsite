@@ -1,0 +1,57 @@
+ul {
+    
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  
+
+}
+
+li {
+    display: inline-block;
+   
+   
+}
+
+
+
+li a {
+    display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+   /* background-color: grey; */
+    opacity: 0.5;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+    
+}
+
+head, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+#image_container {
+    width: 150vw;
+    height: 150vh;
+    
+}
+
+img {
+    
+    max-width: 100%; 
+    height:auto;
+    max-height:100%;
+    padding: 0px;
+    background-size: cover;
+    
+}
