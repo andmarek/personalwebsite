@@ -1,103 +1,169 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+* {
+  padding: 0;
+  margin: 0;
+}
+
 
 body {
-    margin: 0;
-    background: #222;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 400;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 } 
 
 /* Start Nav */
 .container {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 header {
-    background: #796b86;
+  background: #828f9b;
+}
+
+.title-name {
+  float: left;
+  height: auto;
 }
 
 header::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
 .logo {
-    float: left;
-    padding: 10px 0;
+  float: left;
+  padding: 10px 0;
 }
 
 nav {
-    float: right;
+  float: right;
 }
 
 nav ul {
-    margin: 0;    
-    padding: 0;
-    list-style: none;
+  margin: 0;    
+  padding: 0;
+  list-style: none;
 
 }
 
 nav li {
-    display: inline-block;
-    margin-left: 70px;
-    padding-top: 23px;
-
-    position: relative;
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+  position: relative;
 }
 
 nav a {
-    color: #444;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
+
+
 nav a:hover {
-    color: #000;
+  color: #000;
 }
 
 nav a::before {
-    content: '';
-    display: block;
-    height: 5px;
-    background-color: #444;
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
 
-    position: absolute;
-    top: 0;
-    width: 0%;
+  position: absolute;
+  top: 0;
+  width: 0%;
 
-    transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
 
 }
 
 nav a:hover::before {
-    width: 100%;
+  width: 100%;
 }
 /* End Nav */
 
-/* Start about me section */
-.title-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: #ffffff;
-    transform: translate(-50%, -50%);
-}
-.title-container > h1 {
-    font-size: 70px;
-}
-.subtitle > ul {
-    list-style: none;
-}
-.subtitle > li {
-    float: left;
-   /* display: inline;*/
+/* Begin index "Title" text */
+.index {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #828f9b;
+  border: 1px solid #f1f1f1;
+  border-style: solid;
+  border-radius: 5px;
+  margin: 0.5%; 
+  background-image: url("assets/desertimage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
-/* End title  section */
+.text-container {
+  width: 100%;
+}
+.index .text-container h1 {
+  font-size: 62px;
+  text-align: center;
+  margin: 0;
+  padding-top: 50px;
+}
+.index .text-container ul {
+  padding: 0;
+  text-align: center;
+  margin: 0px;
+}
+
+.index .text-container li {
+  margin-bottom: 10%;
+  display: inline-block;
+  text-align: center;
+  font-size: 42px;
+}
+.bottom-f {
+  display: flex;
+  width: 100%;
+  font-size: 24px;
+
+}
+.bottom-f .quicky {
+  justify-content: flex-start;
+  margin: 1%;
+  background-color: #f1f1f1;
+  padding: 1%;
+  border: 1px solid #f1f1f1;
+  border-style: solid;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.bottom-f .quicky h2 {
+  font-size: 30px;
+  padding-bottom: 2%;
+}
+
+.interests {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  margin: 1%;
+  background-color: #f1f1f1;
+  padding: 1%;
+  border: 1px solid #f1f1f1;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.interests .interests-text {
+}
+
+
 
 
 
