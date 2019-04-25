@@ -1,24 +1,53 @@
 <!DOCTYPE html>
+<!-- maroon color thing#382330-->
 <html lang="en-US" style="height: 100%;"></html>
 <head>
-    <title>Andrew Marek</title>
-    <meta name=author" content="Andrew Marek">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <title>Andrew Marek</title>
+  <meta charset="UTF-8">
+  <meta name=author content="Andrew Marek">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
-
 <body>
-        <div id ="wrapper">
-                <header><h1>Andrew Marek</h1></header>
-                <nav>
-                    <b>
-                        <a href="education.html">Education</a>
-                        <a href="hobbies.html">Hobbies</a>
-                        <a href="friends.html">Friends</a>
-                        <a href="music.html">Music</a>
-                        <a href="inspiration.html">Inspiration</a>
-                        <a href="contact.html">Contact</a>
-                    </b>
-                </nav>
+  <!-- Start header -->
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="index.html"> Home </a> </li>
+          <li><a href="education.html"> Education </a></li>
+          <li><a href="ffamily.html"> Friends & Family </a></li>
+          <li><a href="tools.html"> Tools </a></li>
+          <li><a href="contact.html"> Contact Me </a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- End header -->
 
+  <div class="forum">
+    <div id="after_submit"></div>
+    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+      <div class="row">
+        <label class="required" for="name">Your Name:</label><br />
+        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+        <span id="name_validation" class="error_message"></span>
+      </div>
+      <div class="row">
+        <label class="required" for="email">Your email:</label><br />
+        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+        <span id="email_validation" class="error_message"></span>
+      </div>
+      <div class="row">
+        <label class="required" for="message">Your message:</label><br />
+        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+        <span id="message_validation" class="error_message"></span>
+      </div>
+      <input id="submit_button" type="submit" value="Send email" />
+    </form>
+  </div>
 
 </body>
+
+
+
+
