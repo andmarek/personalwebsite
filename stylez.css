@@ -1,0 +1,24 @@
+body {
+  padding-top: 65px; //This is needed for not letting things go under navbar
+}
+
+.navbar {
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+
+}
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
