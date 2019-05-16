@@ -27,7 +27,17 @@ body {
   margin-right: 0px;
 }
 
+/* Icons */
 #i-github {
   top: -25%; 
   position: relative; 
+}
+#i-twitter {
+  top: -25%;
+  position: relative;
+}
+#i-linkedin {
+  pointer-events: none;
+  top: -25%;
+  position: relative;
 }
