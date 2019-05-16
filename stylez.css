@@ -18,7 +18,16 @@ body {
   margin-right: auto;
 }
 
+.jumbotron {
+  width: auto;
+}
+
 .row {
   margin-left: 0px;
   margin-right: 0px;
+}
+
+#i-github {
+  top: -25%; 
+  position: relative; 
 }
