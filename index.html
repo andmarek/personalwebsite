@@ -18,7 +18,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#"> Andrew Marek </a>
+          <!-- <a class="navbar-brand" href="#"> Andrew Marek </a> -->
           <a class="navbar-brand" href="http://www.github.com/andmarek">
             <!-- Github -->
             <svg id="i-github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32">
@@ -33,45 +33,31 @@
             </svg>
             <!-- End twitter -->
           </a>
-          <a class="navbar-brand" href="https://www.linkedin.com/in/andrew-marek-008628150">
-            <object id="i-linkedin" type="image/svg+xml" data="assets/icons/linkedin.svg" height="32" width="32"  >
-              Your browser doesn't support svg :(
-            </object>
-          </a>
+
         </div> <!-- Navbar container -->
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="#">Home</a> </li>
-          <li class="active"><a href="#">About Me</a> </li>
           <li class="active"><a href="#">Projects</a> </li>
+          <li class="active"><a href="#">About Me</a> </li>
           <li class="active"><a href="#">Contact</a> </li>
         </ul>
       </div> <!-- container-fluid -->
     </nav>
-    <main>
-
     <div class="jumbotron">
       <div class="container">
         <h1>Andrew Marek</h1>
-            <!-- Twitter -->
-            <svg id="i-twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32">
-              <path stroke-width="0" fill="currentColor" d="M60 16 L54 17 L58 12 L51 14 C42 4 28 15 32 24 C16 24 8 12 8 12 C8 12 2 21 12 28 L6 26 C6 32 10 36 17 38 L10 38 C14 46 21 46 21 46 C21 46 15 51 4 51 C37 67 57 37 54 21 Z" />
-            </svg>
-            <!-- End twitter -->
-            <!-- Github -->
-            <svg id="i-github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32">
-              <path stroke-width="0" fill="currentColor" d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" />
-            </svg>
-            <!-- End GitHub -->
+        <p> Software Developer </p>
       </div> <!-- Initial jumbotron container -->
-    </div> <!-- Jumbotron -->
-    <div class="container"> <!-- Projects -->
+    </div>  <!-- Jumbotron div -->
+    <main>
+    <div class="container" id="projects"> <!-- Projects -->
       <h1> Projects </h1>
       <div class="row"> 
         <div class="col-md-4">
           <p>
           <h2> Vim Sweep </h2>
           </p>
-          <p> I really like Vi (Vim).  And I mean it.  I was given a small
+          <p> I was given a small
           assignment to code something in C++ of my choosing.  I decided to do
           a simple Minesweeper game with Vim commands.  It's really simple, but
           was very fun to make. </p>
@@ -85,12 +71,77 @@
         </div> <!-- Col MD 4 2 -->
 
         <div class="col-md-4">
-          <h2> Project 3 </h2>
-          <p> This is something really cool that I haven't made yet.  Hopefully
-          it comes out soon because I really want to make it!</p>
+          <h2> TEA FPGA Implementation </h2>
+          <p> Tiny Encryption Algorithm implementation on an FPGA using Verilog and an
+          Altera DE2-115.
+          board.</p>
         </div> <!-- Col MD 4 3 -->
       </div> <!-- rows -->
-    </div> <!-- Row container -->
+    </div> <!-- (Project) Row container -->
+    <hr></hr>
+    <div class="container" id="aboutme">
+      <h1> About Me </h1>
+      <h2> Personal </h2>
+      <p> My name is Andrew Marek and I am a software developer at Iowa State university.
+      I am currently pursing a B.S. in Software Engineering and I will be going into my
+      junior year!  Outside of school, I like to run, play frisbee, and hanging out with my
+      friends.
+      </p>
+      <h2> Education </h2>
+    </div>
+    <hr></hr>
+    <div class="container" id="contact"> 
+      <h1> Contact Me </h1>
+      <form id="contact-form" method="post" action="contact.php" role="form">
+      <div class="messages"></div>
+
+    <div class="controls">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name"> Name </label>
+                    <input id="form_name" type="text" name="name" class="form-control"
+                    placeholder="Please enter your first and last name " required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">Email </label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email " required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Message </label>
+                    <textarea id="form_message" name="message" class="form-control"
+                    placeholder="Message for me" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Send message">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted">
+            </div>
+        </div>
+    </div>
+      
+      </form>
+    </div>
     </main>
     <!-- Bootstrap'd -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

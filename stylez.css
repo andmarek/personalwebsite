@@ -36,8 +36,8 @@ body {
   top: -25%;
   position: relative;
 }
-#i-linkedin {
-  pointer-events: none;
-  top: -25%;
-  position: relative;
+#aboutme > h2, p {
+  width: 50%;
 }
+
+
