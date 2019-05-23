@@ -1,7 +1,9 @@
 body {
   /* removed sticky nav bar */
 }
-
+p {
+  font-size: 24px;
+}
 
 .list-group-item {
   data-toggle: list;
@@ -34,9 +36,10 @@ body {
   top: -25%;
   position: relative;
 }
+/*
 #aboutme > h2, p {
   width: 50%;
-}
+} */
 #aboutme > p {
   font-size: 18px;
 }
@@ -57,5 +60,26 @@ body {
 }
 #contact > h1 {
   text-align: center;
+}
+#contact label{
+  font-size: 24px;
+  
+}
+.flex-container {
+  display: flex;
+}
+.coler {
+  float: left;
+  width: 50%;
+  padding: 10px;
+
+}
+.row-test:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#aboutme ul {
+  font-size: 24px;
 }
 

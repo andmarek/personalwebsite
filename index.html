@@ -36,7 +36,7 @@
         </div> <!-- Navbar container -->
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="#home">Home</a></li>
-          <li class="active"><a href="#proj">Projects</a> </li>
+          <li class="active"><a href="#projects">Projects</a> </li>
           <li class="active"><a href="#aboutme">About Me</a> </li>
           <li class="active"><a href="#contact">Contact</a> </li>
         </ul>
@@ -65,79 +65,95 @@
           <h2> Rogue-like Game </h2>
           <p> This is a Rogue-like game I made for a C programming class.  It
           is written using some of Dr. Jeremy Sheaffer's code (namely a
-          heap-implementation!) </p>
+          heap implementation). </p>
           <a href=""> Source to come </a>
         </div> <!-- Col MD 4 2 -->
         <div class="col-md-4">
           <h2> TEA FPGA Implementation </h2>
-          <p> Tiny Encryption Algorithm implementation on an FPGA using Verilog. </p>
+          <p> <a href="https://en.wikipedia.org/wiki/Tiny_Encryption_Algorithm">Tiny Encryption Algorithm</a> implementation on an FPGA using Verilog. </p>
         </div> <!-- Col MD 4 3 -->
       </div> <!-- rows -->
     </div> <!-- (Project) Row container -->
     <hr>
     <div class="container" id="aboutme">
+
       <h1> About Me </h1>
-      <h2> Personal </h2>
-      <p> I am currently pursuing a software engineering degree at Iowa State University.
-      I am also pursuing minors in Spanish and mathematics.  During the school year, I am a
-      peer mentor for the Software Engineering Learning Community where I am a lab
-      assistant and help students find their passion in software development.   </p>
-    </div>
-    <hr>
-    <div class="container" id="contact"> 
-      <h1> Contact Me </h1>
-      <form id="contact-form" method="post" action="contact.php">
-        <div class="messages"></div>
-        <div class="controls">
-          <div class="col">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="form_name"> Name </label>
-                <input id="form_name" type="text" name="name" class="form-control"
-                                                              placeholder="Please enter your first and last name " required="required" data-error="Firstname is required.">
+
+      <div class="row-test">
+
+        <div class="coler">
+          <h2> Personal </h2>
+          <p> I am currently pursuing a software engineering degree at Iowa State University.
+          I am also pursuing minors in Spanish and mathematics.  During the school year, I am a
+          peer mentor for the Software Engineering Learning Community where I am a lab
+          assistant and help students find their passion in software development.   </p>
+        </div>
+
+        <div class="coler">
+          <h2> Skills </h2>
+          <p>
+          <ul>
+            <li><strong>Languages:</strong> C, C++, Java, Verilog, Go</li>
+            <li><strong>Web-Dev:</strong> JavaScript, jQuery, HTML, CSS</li>
+            <li><strong>Tools:</strong> Vi(m), Android Studio, Git, Linux</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="container" id="contact"> 
+        <h1> Contact Me </h1>
+        <form id="contact-form" method="post" action="contact.php">
+          <div class="messages"></div>
+          <div class="controls">
+            <div class="col">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_name"> Name </label>
+                  <input id="form_name" type="text" name="name" class="form-control"
+                                                                placeholder="Please enter your first and last name " required="required" data-error="Firstname is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_email">Email </label>
+                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email " required="required" data-error="Valid email is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
                 <div class="help-block with-errors"></div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12">
               <div class="form-group">
-                <label for="form_email">Email </label>
-                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email " required="required" data-error="Valid email is required.">
+                <label for="form_message">Message </label>
+                <textarea id="form_message" name="message" class="form-control"
+                                                           placeholder="Message" rows="4" required="required" data-error="Please, leave us a message."></textarea>
                 <div class="help-block with-errors"></div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="help-block with-errors"></div>
+            <div class="col-md-12">
+              <input type="submit" class="btn btn-success btn-send" value="Send message">
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="form-group">
-              <label for="form_message">Message </label>
-              <textarea id="form_message" name="message" class="form-control"
-                                                         placeholder="Message" rows="4" required="required" data-error="Please, leave us a message."></textarea>
-              <div class="help-block with-errors"></div>
+          <div class="row">
+            <div class="col-md-12">
+              <p class="text-muted">
             </div>
           </div>
-          <div class="col-md-12">
-            <input type="submit" class="btn btn-success btn-send" value="Send message">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <p class="text-muted">
-          </div>
-        </div>
-      </form>
-    </div>
+        </form>
+      </div>
     </main>
     <!-- Bootstrap'd -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script
-                                                                                                                                                       src="http://code.jquery.com/jquery-3.4.1.js"
-                                                                                                                                                       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+                                                                                                                                                       src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
                                                                                                                                                        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -145,5 +161,4 @@
     <!-- End -->
     </div>
   </body>
-
 </html>
