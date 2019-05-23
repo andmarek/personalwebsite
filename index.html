@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="stylez.css">
   </head>
   <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <!-- <a class="navbar-brand" href="#"> Andrew Marek </a> -->
@@ -46,71 +46,56 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Andrew Marek</h1>
-        <p> Software Developer </p>
+        <div>
+          <a class="navbar-brand" href="http://www.github.com/andmarek">
+            <!-- Github -->
+            <svg id="i-github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32">
+              <path stroke-width="0" fill="currentColor" d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" />
+            </svg>
+            <!-- End GitHub -->
+          </a>
+          <a class="navbar-brand" href="http://twitter.com/andrewmarek">
+            <!-- Twitter -->
+            <svg id="i-twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32">
+              <path stroke-width="0" fill="currentColor" d="M60 16 L54 17 L58 12 L51 14 C42 4 28 15 32 24 C16 24 8 12 8 12 C8 12 2 21 12 28 L6 26 C6 32 10 36 17 38 L10 38 C14 46 21 46 21 46 C21 46 15 51 4 51 C37 67 57 37 54 21 Z" />
+            </svg>
+            <!-- End twitter -->
+          </a>
+        </div>
       </div> <!-- Initial jumbotron container -->
     </div>  <!-- Jumbotron div -->
     <main>
+
     <div class="container" id="projects"> <!-- Projects -->
       <h1> Projects </h1>
-
-      <div class="row" id="projectstabs">
-        <div class="col-4">
-          <div class="list-group" id="list-tab" role="tablist">
-            <a class="list-group-item list-group-item-action active" id="list-home-list"
-                                                                     data-toggle="list" href="#list-home" role="tab" aria-controls="home">Vim Sweep</a>
-            <a class="list-group-item list-group-item-action" id="list-profile-list"
-                                                              data-toggle="list" href="#list-profile" role="tab"
-                                                                                                      aria-controls="profile">Rogue-like Game</a>
-            <a class="list-group-item list-group-item-action" id="list-messages-list"
-                                                              data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">FPGA
-                                                              Tea Implementation</a>
-          </div>
-        </div>
-        <div class="col-8">
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
-            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
-            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
-            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
-          </div>
-        </div>
-      </div>
-
-
       <div class="row"> 
         <div class="col-md-4">
-          <h2> Vim Sweep </h2>
+          <a> <h2> Vim-Sweep </h2> </a>
           <p> I was given a small
           assignment to code something in C++ of my choosing.  I decided to do
           a simple Minesweeper game with Vim commands.  It's really simple, but
           was very fun to make. </p>
         </div> <!-- Col MD 4 1 -->
-
         <div class="col-md-4">
-          <h2> Rogue-Like Game </h2>
+          <a href="github.com"><h2> Rogue-like Game </h2></a>
           <p> This is a Rogue-like game I made for a C programming class.  It
           is written using some of Dr. Jeremy Sheaffer's code (namely a
           heap-implementation!) </p>
         </div> <!-- Col MD 4 2 -->
-
         <div class="col-md-4">
           <h2> TEA FPGA Implementation </h2>
-          <p> Tiny Encryption Algorithm implementation on an FPGA using Verilog and an
-          Altera DE2-115
-          board.</p>
+          <p> Tiny Encryption Algorithm implementation on an FPGA using Verilog. </p>
         </div> <!-- Col MD 4 3 -->
       </div> <!-- rows -->
     </div> <!-- (Project) Row container -->
     <hr>
     <div class="container" id="aboutme">
       <h1> About Me </h1>
-      <h2> Personal </h2>
-      <p> My name is Andrew Marek and I am a software developer at Iowa State university.
-      I am currently pursing a B.S. in Software Engineering and I will be going into my
-      junior year!  Outside of school, I like to run, play frisbee, and hanging out with my
-      friends.
-      </p>
-      <h2> Education </h2>
+      <h2> Professional </h2>
+      <p> I am currently pursuing a software engineering degree at Iowa State University.
+      I am also pursuing minors in Spanish and mathematics.  During the school year, I am a
+      peer mentor for the Software Engineering Learning Community where I am a lab
+      assistant and help students fine a passion in software.  
     </div>
     <hr>
     <div class="container" id="contact"> 
@@ -146,7 +131,7 @@
             <div class="form-group">
               <label for="form_message">Message </label>
               <textarea id="form_message" name="message" class="form-control"
-                                                         placeholder="Message for me" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                                         placeholder="Message" rows="4" required="required" data-error="Please, leave us a message."></textarea>
               <div class="help-block with-errors"></div>
             </div>
           </div>
