@@ -8,14 +8,14 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <!-- Space for my script later -->
     <link rel="stylesheet" href="stylez.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <!-- <a class="navbar-brand" href="#"> Andrew Marek </a> -->
@@ -33,39 +33,33 @@
             </svg>
             <!-- End twitter -->
           </a>
-
         </div> <!-- Navbar container -->
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Home</a> </li>
-          <li class="active"><a href="#">Projects</a> </li>
-          <li class="active"><a href="#">About Me</a> </li>
-          <li class="active"><a href="#">Contact</a> </li>
+          <li class="active"><a href="#home">Home</a></li>
+          <li class="active"><a href="#proj">Projects</a> </li>
+          <li class="active"><a href="#aboutme">About Me</a> </li>
+          <li class="active"><a href="#contact">Contact</a> </li>
         </ul>
       </div> <!-- container-fluid -->
     </nav>
-    <div class="jumbotron">
+    <div class="jumbotron" id="home">
       <div class="container">
         <h1 class="d-inline">Andrew Marek 
-          <a href="twitter.com">
-            <svg id="i-twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32">
-              <path stroke-width="0" fill="currentColor" d="M60 16 L54 17 L58 12 L51 14 C42 4 28 15 32 24 C16 24 8 12 8 12 C8 12 2 21 12 28 L6 26 C6 32 10 36 17 38 L10 38 C14 46 21 46 21 46 C21 46 15 51 4 51 C37 67 57 37 54 21 Z" />
-            </svg>
-          </a>
-         </h1>
+        </h1>
         <div>
         </div>
       </div> <!-- Initial jumbotron container -->
     </div>  <!-- Jumbotron div -->
     <main>
     <div class="container" id="projects"> <!-- Projects -->
-      <h1> Projects </h1>
+      <h1 id="proj"> Projects </h1>
       <div class="row"> 
         <div class="col-md-4">
           <h2> Vim-Sweep </h2>
           <p> 
           A simple Minesweeper implementation with Vim commands.  It's really simple, but
           was very fun to make. </p>
-          <a href="www.github.com"> Source code </a>
+          <a href="https://github.com/andmarek/Vim-Sweep"> Source code </a>
         </div> <!-- Col MD 4 1 -->
         <div class="col-md-4">
           <h2> Rogue-like Game </h2>
@@ -83,11 +77,11 @@
     <hr>
     <div class="container" id="aboutme">
       <h1> About Me </h1>
-      <h2> Professional </h2>
+      <h2> Personal </h2>
       <p> I am currently pursuing a software engineering degree at Iowa State University.
       I am also pursuing minors in Spanish and mathematics.  During the school year, I am a
       peer mentor for the Software Engineering Learning Community where I am a lab
-      assistant and help students find their passion in software development.  
+      assistant and help students find their passion in software development.   </p>
     </div>
     <hr>
     <div class="container" id="contact"> 
@@ -141,8 +135,15 @@
     </main>
     <!-- Bootstrap'd -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script
+                                                                                                                                                       src="http://code.jquery.com/jquery-3.4.1.js"
+                                                                                                                                                       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+                                                                                                                                                       crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
     <!-- End -->
+    </div>
   </body>
+
 </html>

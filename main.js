@@ -4,8 +4,6 @@ $('.nav a').on('click', function(e) {
   console.log(hash);
   if(this.hash != '') {
     e.preventDefault();
-
-
     $('html, body').animate(
       {
         scrollTop: $(hash).offset().top

@@ -1,25 +1,23 @@
 body {
-  padding-top: 65px; //This is needed for not letting things go under navbar
+  /* removed sticky nav bar */
 }
 
+
+.list-group-item {
+  data-toggle: list;
+}
 .navbar {
   margin-bottom: 0px;
   border: 1px solid transparent;
 }
-.navbar-fixed-top {
-  top: 0;
-  border-width: 0 0 1px;
-
-}
-.container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .jumbotron {
+  text-align: center;
+/*  background-image: url(assets/martin.jpg); */
+  background-image: url(assets/pablo.jpg); 
   width: auto;
+  margin-bottom: 0px;
+  padding: 10em; /* Make the jumbotron bigger */
+/*  background-size: cover; */
 }
 
 .row {
@@ -39,5 +37,25 @@ body {
 #aboutme > h2, p {
   width: 50%;
 }
-
+#aboutme > p {
+  font-size: 18px;
+}
+.fade {
+  opacity: 100;
+}
+.col-4 {
+  margin-right: 0px;
+}
+#list-group {
+  width: 50%;
+}
+#projects > h1{
+  text-align: center;
+}
+#aboutme > h1 {
+  text-align: center;
+}
+#contact > h1 {
+  text-align: center;
+}
 
