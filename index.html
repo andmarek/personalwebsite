@@ -54,9 +54,7 @@
       <h1> Projects </h1>
       <div class="row"> 
         <div class="col-md-4">
-          <p>
           <h2> Vim Sweep </h2>
-          </p>
           <p> I was given a small
           assignment to code something in C++ of my choosing.  I decided to do
           a simple Minesweeper game with Vim commands.  It's really simple, but
@@ -73,12 +71,12 @@
         <div class="col-md-4">
           <h2> TEA FPGA Implementation </h2>
           <p> Tiny Encryption Algorithm implementation on an FPGA using Verilog and an
-          Altera DE2-115.
+          Altera DE2-115
           board.</p>
         </div> <!-- Col MD 4 3 -->
       </div> <!-- rows -->
     </div> <!-- (Project) Row container -->
-    <hr></hr>
+    <hr>
     <div class="container" id="aboutme">
       <h1> About Me </h1>
       <h2> Personal </h2>
@@ -89,57 +87,53 @@
       </p>
       <h2> Education </h2>
     </div>
-    <hr></hr>
+    <hr>
     <div class="container" id="contact"> 
       <h1> Contact Me </h1>
-      <form id="contact-form" method="post" action="contact.php" role="form">
-      <div class="messages"></div>
-
-    <div class="controls">
-
-        <div class="row">
+      <form id="contact-form" method="post" action="contact.php">
+        <div class="messages"></div>
+        <div class="controls">
+          <div class="col">
             <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_name"> Name </label>
-                    <input id="form_name" type="text" name="name" class="form-control"
-                    placeholder="Please enter your first and last name " required="required" data-error="Firstname is required.">
-                    <div class="help-block with-errors"></div>
-                </div>
+              <div class="form-group">
+                <label for="form_name"> Name </label>
+                <input id="form_name" type="text" name="name" class="form-control"
+                                                              placeholder="Please enter your first and last name " required="required" data-error="Firstname is required.">
+                <div class="help-block with-errors"></div>
+              </div>
             </div>
-        </div>
-        <div class="row">
+          </div>
+          <div class="col">
             <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_email">Email </label>
-                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email " required="required" data-error="Valid email is required.">
-                    <div class="help-block with-errors"></div>
-                </div>
+              <div class="form-group">
+                <label for="form_email">Email </label>
+                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email " required="required" data-error="Valid email is required.">
+                <div class="help-block with-errors"></div>
+              </div>
             </div>
             <div class="col-md-6">
-                    <div class="help-block with-errors"></div>
-                </div>
+              <div class="help-block with-errors"></div>
             </div>
+          </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <div class="form-group">
-                    <label for="form_message">Message </label>
-                    <textarea id="form_message" name="message" class="form-control"
-                    placeholder="Message for me" rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                    <div class="help-block with-errors"></div>
-                </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="form_message">Message </label>
+              <textarea id="form_message" name="message" class="form-control"
+                                                         placeholder="Message for me" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+              <div class="help-block with-errors"></div>
             </div>
-            <div class="col-md-12">
-                <input type="submit" class="btn btn-success btn-send" value="Send message">
-            </div>
+          </div>
+          <div class="col-md-12">
+            <input type="submit" class="btn btn-success btn-send" value="Send message">
+          </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <p class="text-muted">
-            </div>
+          <div class="col-md-12">
+            <p class="text-muted">
+          </div>
         </div>
-    </div>
-      
       </form>
     </div>
     </main>
